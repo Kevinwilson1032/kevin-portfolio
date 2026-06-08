@@ -1,0 +1,331 @@
+
+/* =========================
+   PAGE
+========================= */
+
+.project-page {
+  min-height: 100vh;
+
+  background-image: url("/white-waves.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  padding: 100px 20px 80px;
+}
+
+@media (max-width: 768px) {
+  .project-page {
+    background-attachment: scroll;
+  }
+}
+
+/* =========================
+   HEADER AREA
+========================= */
+
+.project-title {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #000;
+
+  margin: 0 0 24px 0; /* gives breathing room below title */
+}
+
+.company-logo {
+  display: flex;
+  justify-content: center;
+
+  margin: 0 0 40px 0; /* space below logo */
+}
+
+.company-logo img {
+  height: 68px;
+  width: auto;
+  display: block;
+
+  border-radius: 6px;
+}
+/* =========================
+   CONTENT WRAPPER
+========================= */
+
+.project-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* =========================
+   MEDIA BASE RULE (SAFE)
+========================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+.project-video {
+  border-radius: 16px;
+  overflow: hidden;
+
+  margin-bottom: 30px;
+}
+
+.project-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  display: block;
+}
+
+/* =========================
+   IMAGE BLOCK
+========================= */
+
+.project-image {
+  border-radius: 16px;
+  overflow: hidden;
+
+  margin-bottom: 30px;
+}
+
+/* =========================
+   IMAGE ROW
+========================= */
+
+.project-image-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+
+  margin-bottom: 30px;
+}
+
+.project-image-row .project-image {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* images inside row (no squish ever) */
+.project-image-row img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .project-image-row {
+    grid-template-columns: 1fr;
+  }
+
+  .project-title {
+    font-size: 2.4rem;
+  }
+}
+
+/* =========================
+   DETAIL CARD
+========================= */
+
+.detail-card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  border-radius: 16px;
+
+  padding: 28px;
+
+  margin-bottom: 25px;
+
+  color: #000;
+}
+
+.detail-card h2 {
+  margin-bottom: 14px;
+}
+
+.detail-card h3 {
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.detail-card p {
+  line-height: 1.75;
+}
+
+/* =========================
+   TAG
+========================= */
+
+.detail-tag {
+  display: inline-block;
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  color: #0891b2;
+
+  background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.35);
+
+  margin-bottom: 14px;
+}
+
+/* =========================
+   OVERVIEW LAYOUT
+========================= */
+
+.overview-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.overview-text {
+  flex: 1;
+}
+
+/* side image */
+.room-image {
+  width: 150px;
+  flex-shrink: 0;
+}
+
+/* =========================
+   KM LAYOUT
+========================= */
+
+.km-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.km-text {
+  flex: 1;
+}
+
+.km-side-image {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+/* =========================
+   MOBILE STACK
+========================= */
+
+@media (max-width: 768px) {
+  .overview-layout,
+  .km-layout {
+    flex-direction: column;
+  }
+
+  .room-image,
+  .km-side-image {
+    width: 100%;
+  }
+}
+
+/* =========================
+   GITHUB CARD
+========================= */
+
+.github-card {
+  text-align: center;
+}
+
+.github-link {
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+  color: #000;
+
+  font-weight: 600;
+
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+
+  transition: 0.2s ease;
+}
+
+.github-link:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.85);
+}
+/*istqb*/
+.cert-image {
+  display: block;
+
+  height: 90px;
+  width: auto;
+
+  margin: 0 auto 20px;
+}
+/* =========================
+TALENT ON DEMAND
+========================= */
+
+.tod-header {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+
+margin-bottom: 40px;
+}
+
+.tod-logo {
+height: 90px;
+width: auto;
+border-radius: 10px;
+object-fit: contain;
+}
+
+.tod-images {
+width: 280px;
+
+display: flex;
+flex-direction: column;
+gap: 15px;
+
+flex-shrink: 0;
+}
+
+.tod-images img {
+width: 100%;
+
+border-radius: 16px;
+
+display: block;
+}
+
+@media (max-width: 768px) {
+.tod-header {
+flex-direction: column;
+gap: 20px;
+}
+
+.tod-images {
+width: 100%;
+}
+
+.tod-logo {
+height: 70px;
+}
+}
