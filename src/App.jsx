@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import FingerVolume from "./pages/FingerVolume";
@@ -10,7 +10,7 @@ import TogetherCareEpic from "./pages/TogetherCareEpic";
 import ScrollToTop from "./ScrollToTop";
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouterRouter>
     <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -44,7 +44,7 @@ function App() {
   element={<TogetherCareEpic />}
 />
       </Routes>
-    </BrowserRouter>
+    </HashRouterRouter>
   );
 }
 
