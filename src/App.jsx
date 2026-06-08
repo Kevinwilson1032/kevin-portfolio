@@ -10,7 +10,7 @@ import TogetherCareEpic from "./pages/TogetherCareEpic";
 import ScrollToTop from "./ScrollToTop";
 function App() {
   return (
-    <HashRouterRouter>
+    <HashRouter>
     <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -44,7 +44,7 @@ function App() {
   element={<TogetherCareEpic />}
 />
       </Routes>
-    </HashRouterRouter>
+    </HashRouter>
   );
 }
 
